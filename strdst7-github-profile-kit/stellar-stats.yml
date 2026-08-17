@@ -1,0 +1,27 @@
+name: Update Stellar Progress
+on:
+  schedule:
+    - cron: "15 16 * * *"   # 16:15 UTC = 00:15 MYT, daily
+  workflow_dispatch:         # manual trigger from the Actions tab
+permissions:
+  contents: write
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate star chart (GraphQL mode — exact stats)
+        run: python stellar_stats.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USERNAME: strdst7
+      - name: Commit if changed
+        run: |
+          git config user.name "stellar-progress-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add stellar-progress.svg
+          git diff --cached --quiet || git commit -m "chore: refresh stellar progress [skip ci]"
+          git push

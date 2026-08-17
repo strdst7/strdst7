@@ -1,0 +1,103 @@
+<svg width="840" height="252" viewBox="0 0 840 252"
+     xmlns="http://www.w3.org/2000/svg" font-family="'Courier New',Courier,monospace">
+  <title>Stellar Progress Log for strdst7</title>
+  <defs>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#C9932F"/>
+      <stop offset="0.55" stop-color="#A6C8FF"/>
+      <stop offset="1" stop-color="#E9C46A"/>
+    </linearGradient>
+    <radialGradient id="corona" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#A6C8FF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#A6C8FF" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      .lbl  { fill:#8A8272; font-size:10.5px; letter-spacing:1px; }
+      .val  { fill:#F5EDD8; font-size:21px; font-weight:bold; }
+      .sub  { fill:#8A8272; font-size:10px; }
+      .pulse { animation: pulse 2.6s ease-in-out infinite; }
+      .tw1 { animation: tw 3.1s ease-in-out infinite; }
+      .tw2 { animation: tw 4.3s ease-in-out infinite 0.9s; }
+      .tw3 { animation: tw 5.2s ease-in-out infinite 1.7s; }
+      @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:.55; } }
+      @keyframes tw    { 0%,100% { opacity:.9; } 50% { opacity:.25; } }
+    </style>
+  </defs>
+
+  <!-- panel -->
+  <rect width="840" height="252" rx="14" fill="#0A0908"/>
+  <rect x="1.5" y="1.5" width="837" height="249" rx="13"
+        fill="#0F0D0A" stroke="#2A2117" stroke-width="1.5"/>
+
+  <!-- ambient stardust (starts visible; twinkle is enhancement only) -->
+  <g fill="#F5EDD8">
+    <circle class="tw1" cx="330" cy="30"  r="1.4"/>
+    <circle class="tw2" cx="512" cy="52"  r="1.1"/>
+    <circle class="tw3" cx="782" cy="34"  r="1.5"/>
+    <circle class="tw2" cx="694" cy="118" r="1.0"/>
+    <circle class="tw1" cx="806" cy="206" r="1.2"/>
+    <circle class="tw3" cx="418" cy="226" r="1.0"/>
+    <path class="tw2" d="M566 200 l2.4 5 5 2.4 -5 2.4 -2.4 5 -2.4 -5 -5 -2.4 5 -2.4z" fill="#C9932F"/>
+  </g>
+
+  <!-- header -->
+  <text x="26" y="34" fill="#C9932F" font-size="13" letter-spacing="3">// STELLAR PROGRESS LOG</text>
+  <circle cx="736" cy="30" r="3.5" fill="#E9C46A" class="pulse"/>
+  <text x="746" y="34" font-size="11" letter-spacing="1.5" fill="#E9C46A">TRACKING</text>
+  <line x1="26" y1="46" x2="814" y2="46" stroke="#2A2117" stroke-width="1"/>
+
+  <!-- class star + level block -->
+  <circle cx="72" cy="98" r="34" fill="url(#corona)" class="pulse"/>
+  <circle cx="72" cy="98" r="15" fill="#A6C8FF"/>
+  <circle cx="72" cy="98" r="15" fill="none" stroke="#F5EDD8" stroke-opacity="0.6" stroke-width="1"/>
+  <text x="72" y="103" text-anchor="middle" font-size="14" font-weight="bold" fill="#0A0908">B</text>
+
+  <text x="122" y="88" class="lbl">SPECTRAL CLASS B &#183; RIGEL TIER</text>
+  <text x="122" y="114" fill="#F5EDD8" font-size="28" font-weight="bold" letter-spacing="1">LV 32</text>
+  <text x="236" y="114" class="sub">1,045 XP &#183; rolling 365d</text>
+
+  <!-- fusion bar -->
+  <text x="122" y="140" class="lbl">FUSION PROGRESS &#8594; LV 33</text>
+  <rect x="122" y="148" width="420" height="12" rx="6" fill="#0A0908" stroke="#2A2117"/>
+  <rect x="122" y="148" height="12" rx="6" fill="url(#bar)" width="135.7">
+    <animate attributeName="width" from="0" to="135.7" dur="1.2s" fill="freeze"/>
+  </rect>
+  <text x="542" y="140" text-anchor="end" class="sub">21 / 65 &#183; next at 1,089</text>
+
+  <!-- spectral ladder -->
+  <text x="122" y="186" class="lbl">SPECTRAL LADDER</text>
+  <text x="126" y="196" text-anchor="middle" font-size="13" fill="#8A8272">M</text>
+  <text x="166" y="196" text-anchor="middle" font-size="13" fill="#8A8272">K</text>
+  <text x="206" y="196" text-anchor="middle" font-size="13" fill="#8A8272">G</text>
+  <text x="246" y="196" text-anchor="middle" font-size="13" fill="#8A8272">F</text>
+  <text x="286" y="196" text-anchor="middle" font-size="13" fill="#8A8272">A</text>
+  <rect x="313" y="183" width="28" height="21" rx="5" fill="#A6C8FF" fill-opacity="0.18" stroke="#A6C8FF"/>
+  <text x="326" y="196" text-anchor="middle" font-size="13" font-weight="bold" fill="#A6C8FF">B</text>
+  <text x="366" y="196" text-anchor="middle" font-size="13" fill="#8A8272">O</text>
+  <text x="122" y="222" class="sub">CLASS B REACHED &#8212; RIGEL TIER &#183; class O at LV 40</text>
+
+  <!-- right stat column -->
+  <line x1="600" y1="62" x2="600" y2="230" stroke="#2A2117" stroke-width="1"/>
+  <g>
+    <text x="614" y="84"  class="lbl">CURRENT ORBIT</text>
+    <text x="614" y="106" class="val">4 d</text>
+    <text x="614" y="119" class="sub">day streak</text>
+
+    <text x="614" y="146" class="lbl">LONGEST BURN</text>
+    <text x="614" y="168" class="val">7 d</text>
+    <text x="614" y="181" class="sub">best in 365d</text>
+
+    <text x="722" y="84"  class="lbl">SUPERNOVA</text>
+    <text x="722" y="106" class="val">77</text>
+    <text x="722" y="119" class="sub">on 06 JUN</text>
+
+    <text x="722" y="146" class="lbl">NEXT CLASS</text>
+    <text x="722" y="168" class="val">O</text>
+    <text x="722" y="181" class="sub">LV 40 &#183; 1600 XP</text>
+  </g>
+
+  <!-- footer -->
+  <line x1="26" y1="232" x2="814" y2="232" stroke="#2A2117" stroke-width="1"/>
+  <text x="26" y="245" class="sub">SYNCED 17 AUG 2026 &#183; SOURCE: PUBLIC CONTRIB GRAPH</text>
+  <text x="814" y="245" text-anchor="end" class="sub" fill="#A6C8FF">&#946; ORI &#183; RIGEL &#183; B8Ia &#183; 850 LY</text>
+</svg>

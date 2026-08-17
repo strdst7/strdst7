@@ -1,0 +1,75 @@
+<svg width="840" height="240" viewBox="0 0 840 240"
+     xmlns="http://www.w3.org/2000/svg" font-family="'Courier New',Courier,monospace">
+  <title>Constellation Loadout — specializations and stack</title>
+  <defs>
+    <style>
+      .lbl { fill:#8A8272; font-size:11px; letter-spacing:2px; }
+      .spec { fill:#F5EDD8; font-size:14px; }
+      .dim { fill:#8A8272; font-size:14px; }
+      .chip { font-size:11px; letter-spacing:1px; }
+      .pulse { animation: pulse 2.4s ease-in-out infinite; }
+      .tw1 { animation: tw 3.8s ease-in-out infinite; }
+      .tw2 { animation: tw 5.1s ease-in-out infinite 1.4s; }
+      @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:.5; } }
+      @keyframes tw { 0%,100% { opacity:.9; } 50% { opacity:.25; } }
+    </style>
+  </defs>
+
+  <rect width="840" height="240" rx="14" fill="#0A0908"/>
+  <rect x="1.5" y="1.5" width="837" height="237" rx="13" fill="#0F0D0A" stroke="#2A2117" stroke-width="1.5"/>
+
+  <g fill="#F5EDD8">
+    <circle class="tw1" cx="410" cy="34" r="1.2"/>
+    <circle class="tw2" cx="806" cy="180" r="1.3"/>
+    <path class="tw1" d="M818 60 l2 4.2 4.2 2 -4.2 2 -2 4.2 -2 -4.2 -4.2 -2 4.2 -2z" fill="#E9C46A" transform="translate(-14,0)"/>
+  </g>
+
+  <text x="26" y="34" fill="#E9C46A" font-size="12" letter-spacing="3">// CONSTELLATION LOADOUT</text>
+  <text x="814" y="34" text-anchor="end" font-size="10" letter-spacing="2" fill="#8A8272">MI4 SYSTEMS REGISTRY</text>
+  <line x1="26" y1="46" x2="814" y2="46" stroke="#2A2117"/>
+
+  <!-- class specializations -->
+  <text x="36" y="70" class="lbl">CLASS SPECIALIZATIONS</text>
+  <g>
+    <path d="M42 88 l2.6 5.4 5.4 2.6 -5.4 2.6 -2.6 5.4 -2.6 -5.4 -5.4 -2.6 5.4 -2.6z" fill="#F0D48A" class="tw1"/>
+    <text x="60" y="98" class="spec">AI SYSTEMS ENGINEER <tspan class="dim">&#8212; agent governance</tspan></text>
+
+    <path d="M42 120 l2.6 5.4 5.4 2.6 -5.4 2.6 -2.6 5.4 -2.6 -5.4 -5.4 -2.6 5.4 -2.6z" fill="#D9AE55" class="tw2"/>
+    <text x="60" y="130" class="spec">RAG ARCHITECT <tspan class="dim">&#8212; identity-safe visuals</tspan></text>
+
+    <path d="M42 152 l2.6 5.4 5.4 2.6 -5.4 2.6 -2.6 5.4 -2.6 -5.4 -5.4 -2.6 5.4 -2.6z" fill="#E9C46A" class="tw1"/>
+    <text x="60" y="162" class="spec">DIGITAL-TWIN SIM <tspan class="dim">&#8212; deterministic checks</tspan></text>
+
+    <path d="M42 184 l2.6 5.4 5.4 2.6 -5.4 2.6 -2.6 5.4 -2.6 -5.4 -5.4 -2.6 5.4 -2.6z" fill="#F0D48A" class="tw2"/>
+    <text x="60" y="194" class="spec">VIBE CODER <tspan class="dim">&#8212; top 5, kracked devs</tspan></text>
+  </g>
+
+  <line x1="436" y1="58" x2="436" y2="196" stroke="#2A2117"/>
+
+  <!-- stack modules -->
+  <text x="456" y="70" class="lbl">STACK MODULES</text>
+  <g class="chip">
+    <rect x="456" y="82" width="68" height="24" rx="12" fill="none" stroke="#F0D48A" stroke-opacity="0.8"/>
+    <text x="490" y="98" text-anchor="middle" fill="#F0D48A">PYTHON</text>
+    <rect x="534" y="82" width="94" height="24" rx="12" fill="none" stroke="#D9AE55" stroke-opacity="0.8"/>
+    <text x="581" y="98" text-anchor="middle" fill="#D9AE55">TYPESCRIPT</text>
+    <rect x="638" y="82" width="100" height="24" rx="12" fill="none" stroke="#E9C46A" stroke-opacity="0.8"/>
+    <text x="688" y="98" text-anchor="middle" fill="#E9C46A">MULTI-AGENT</text>
+
+    <rect x="456" y="116" width="112" height="24" rx="12" fill="none" stroke="#E9C46A" stroke-opacity="0.8"/>
+    <text x="512" y="132" text-anchor="middle" fill="#E9C46A">RAG PIPELINES</text>
+    <rect x="578" y="116" width="112" height="24" rx="12" fill="none" stroke="#F0D48A" stroke-opacity="0.8"/>
+    <text x="634" y="132" text-anchor="middle" fill="#F0D48A">DIGITAL TWINS</text>
+    <rect x="700" y="116" width="112" height="24" rx="12" fill="none" stroke="#D9AE55" stroke-opacity="0.8"/>
+    <text x="756" y="132" text-anchor="middle" fill="#D9AE55">AI GOVERNANCE</text>
+  </g>
+
+  <text x="456" y="168" class="lbl">SIGNATURE SYSTEM</text>
+  <text x="456" y="190" fill="#F5EDD8" font-size="14">ADSI <tspan class="dim">&#8212; Deployment Stability Index</tspan></text>
+
+  <!-- active mission strip -->
+  <line x1="26" y1="206" x2="814" y2="206" stroke="#2A2117"/>
+  <circle cx="40" cy="222" r="3.5" fill="#D9AE55" class="pulse"/>
+  <text x="52" y="226" fill="#D9AE55" font-size="12" letter-spacing="1">ACTIVE MISSION:</text>
+  <text x="196" y="226" fill="#F5EDD8" font-size="12" letter-spacing="1">BANTURAKYAT-AI &#183; public-aid discovery for Malaysians</text>
+</svg>
