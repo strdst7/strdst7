@@ -4,12 +4,12 @@
   <defs>
     <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0" stop-color="#C9932F"/>
-      <stop offset="0.55" stop-color="#A6C8FF"/>
+      <stop offset="0.55" stop-color="#EAF2FF"/>
       <stop offset="1" stop-color="#E9C46A"/>
     </linearGradient>
     <radialGradient id="corona" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#A6C8FF" stop-opacity="0.85"/>
-      <stop offset="1" stop-color="#A6C8FF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#EAF2FF" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#EAF2FF" stop-opacity="0"/>
     </radialGradient>
     <style>
       .lbl  { fill:#8A8272; font-size:10.5px; letter-spacing:1px; }
@@ -48,21 +48,21 @@
 
   <!-- class star + level block -->
   <circle cx="72" cy="98" r="34" fill="url(#corona)" class="pulse"/>
-  <circle cx="72" cy="98" r="15" fill="#A6C8FF"/>
+  <circle cx="72" cy="98" r="15" fill="#EAF2FF"/>
   <circle cx="72" cy="98" r="15" fill="none" stroke="#F5EDD8" stroke-opacity="0.6" stroke-width="1"/>
-  <text x="72" y="103" text-anchor="middle" font-size="14" font-weight="bold" fill="#0A0908">B</text>
+  <text x="72" y="103" text-anchor="middle" font-size="14" font-weight="bold" fill="#0A0908">A</text>
 
-  <text x="122" y="88" class="lbl">SPECTRAL CLASS B &#183; RIGEL TIER</text>
-  <text x="122" y="114" fill="#F5EDD8" font-size="28" font-weight="bold" letter-spacing="1">LV 32</text>
-  <text x="236" y="114" class="sub">1,045 XP &#183; rolling 365d</text>
+  <text x="122" y="88" class="lbl">SPECTRAL CLASS A &#183; WHITE STAR</text>
+  <text x="122" y="114" fill="#F5EDD8" font-size="28" font-weight="bold" letter-spacing="1">LV 27</text>
+  <text x="236" y="114" class="sub">767 XP &#183; rolling 365d</text>
 
   <!-- fusion bar -->
-  <text x="122" y="140" class="lbl">FUSION PROGRESS &#8594; LV 33</text>
+  <text x="122" y="140" class="lbl">FUSION PROGRESS &#8594; LV 28</text>
   <rect x="122" y="148" width="420" height="12" rx="6" fill="#0A0908" stroke="#2A2117"/>
-  <rect x="122" y="148" height="12" rx="6" fill="url(#bar)" width="135.7">
-    <animate attributeName="width" from="0" to="135.7" dur="1.2s" fill="freeze"/>
+  <rect x="122" y="148" height="12" rx="6" fill="url(#bar)" width="290.2">
+    <animate attributeName="width" from="0" to="290.2" dur="1.2s" fill="freeze"/>
   </rect>
-  <text x="542" y="140" text-anchor="end" class="sub">21 / 65 &#183; next at 1,089</text>
+  <text x="542" y="140" text-anchor="end" class="sub">38 / 55 &#183; next at 784</text>
 
   <!-- spectral ladder -->
   <text x="122" y="186" class="lbl">SPECTRAL LADDER</text>
@@ -70,17 +70,17 @@
   <text x="166" y="196" text-anchor="middle" font-size="13" fill="#8A8272">K</text>
   <text x="206" y="196" text-anchor="middle" font-size="13" fill="#8A8272">G</text>
   <text x="246" y="196" text-anchor="middle" font-size="13" fill="#8A8272">F</text>
-  <text x="286" y="196" text-anchor="middle" font-size="13" fill="#8A8272">A</text>
-  <rect x="313" y="183" width="28" height="21" rx="5" fill="#A6C8FF" fill-opacity="0.18" stroke="#A6C8FF"/>
-  <text x="326" y="196" text-anchor="middle" font-size="13" font-weight="bold" fill="#A6C8FF">B</text>
+  <rect x="273" y="183" width="28" height="21" rx="5" fill="#EAF2FF" fill-opacity="0.18" stroke="#EAF2FF"/>
+  <text x="286" y="196" text-anchor="middle" font-size="13" font-weight="bold" fill="#EAF2FF">A</text>
+  <text x="326" y="196" text-anchor="middle" font-size="13" fill="#8A8272">B</text>
   <text x="366" y="196" text-anchor="middle" font-size="13" fill="#8A8272">O</text>
-  <text x="122" y="222" class="sub">CLASS B REACHED &#8212; RIGEL TIER &#183; class O at LV 40</text>
+  <text x="122" y="222" class="sub">climbing toward class B (Rigel, B8Ia) at LV 32</text>
 
   <!-- right stat column -->
   <line x1="600" y1="62" x2="600" y2="230" stroke="#2A2117" stroke-width="1"/>
   <g>
     <text x="614" y="84"  class="lbl">CURRENT ORBIT</text>
-    <text x="614" y="106" class="val">4 d</text>
+    <text x="614" y="106" class="val">6 d</text>
     <text x="614" y="119" class="sub">day streak</text>
 
     <text x="614" y="146" class="lbl">LONGEST BURN</text>
@@ -92,12 +92,12 @@
     <text x="722" y="119" class="sub">on 06 JUN</text>
 
     <text x="722" y="146" class="lbl">NEXT CLASS</text>
-    <text x="722" y="168" class="val">O</text>
-    <text x="722" y="181" class="sub">LV 40 &#183; 1600 XP</text>
+    <text x="722" y="168" class="val">B</text>
+    <text x="722" y="181" class="sub">LV 32 &#183; 1024 XP</text>
   </g>
 
   <!-- footer -->
   <line x1="26" y1="232" x2="814" y2="232" stroke="#2A2117" stroke-width="1"/>
-  <text x="26" y="245" class="sub">SYNCED 17 AUG 2026 &#183; SOURCE: PUBLIC CONTRIB GRAPH</text>
+  <text x="26" y="245" class="sub">SYNCED 19 AUG 2026 &#183; SOURCE: GRAPHQL API</text>
   <text x="814" y="245" text-anchor="end" class="sub" fill="#A6C8FF">&#946; ORI &#183; RIGEL &#183; B8Ia &#183; 850 LY</text>
 </svg>
