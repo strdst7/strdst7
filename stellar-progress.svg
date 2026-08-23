@@ -53,16 +53,16 @@
   <text x="72" y="103" text-anchor="middle" font-size="14" font-weight="bold" fill="#0A0908">A</text>
 
   <text x="122" y="88" class="lbl">SPECTRAL CLASS A &#183; WHITE STAR</text>
-  <text x="122" y="114" fill="#F5EDD8" font-size="28" font-weight="bold" letter-spacing="1">LV 27</text>
-  <text x="236" y="114" class="sub">768 XP &#183; rolling 365d</text>
+  <text x="122" y="114" fill="#F5EDD8" font-size="28" font-weight="bold" letter-spacing="1">LV 28</text>
+  <text x="236" y="114" class="sub">796 XP &#183; rolling 365d</text>
 
   <!-- fusion bar -->
-  <text x="122" y="140" class="lbl">FUSION PROGRESS &#8594; LV 28</text>
+  <text x="122" y="140" class="lbl">FUSION PROGRESS &#8594; LV 29</text>
   <rect x="122" y="148" width="420" height="12" rx="6" fill="#0A0908" stroke="#2A2117"/>
-  <rect x="122" y="148" height="12" rx="6" fill="url(#bar)" width="297.8">
-    <animate attributeName="width" from="0" to="297.8" dur="1.2s" fill="freeze"/>
+  <rect x="122" y="148" height="12" rx="6" fill="url(#bar)" width="88.4">
+    <animate attributeName="width" from="0" to="88.4" dur="1.2s" fill="freeze"/>
   </rect>
-  <text x="542" y="140" text-anchor="end" class="sub">39 / 55 &#183; next at 784</text>
+  <text x="542" y="140" text-anchor="end" class="sub">12 / 57 &#183; next at 841</text>
 
   <!-- spectral ladder -->
   <text x="122" y="186" class="lbl">SPECTRAL LADDER</text>
@@ -80,11 +80,11 @@
   <line x1="600" y1="62" x2="600" y2="230" stroke="#2A2117" stroke-width="1"/>
   <g>
     <text x="614" y="84"  class="lbl">CURRENT ORBIT</text>
-    <text x="614" y="106" class="val">7 d</text>
+    <text x="614" y="106" class="val">1 d</text>
     <text x="614" y="119" class="sub">day streak</text>
 
     <text x="614" y="146" class="lbl">LONGEST BURN</text>
-    <text x="614" y="168" class="val">7 d</text>
+    <text x="614" y="168" class="val">9 d</text>
     <text x="614" y="181" class="sub">best in 365d</text>
 
     <text x="722" y="84"  class="lbl">SUPERNOVA</text>
@@ -98,6 +98,6 @@
 
   <!-- footer -->
   <line x1="26" y1="232" x2="814" y2="232" stroke="#2A2117" stroke-width="1"/>
-  <text x="26" y="245" class="sub">SYNCED 20 AUG 2026 &#183; SOURCE: GRAPHQL API</text>
+  <text x="26" y="245" class="sub">SYNCED 23 AUG 2026 &#183; SOURCE: GRAPHQL API</text>
   <text x="814" y="245" text-anchor="end" class="sub" fill="#A6C8FF">&#946; ORI &#183; RIGEL &#183; B8Ia &#183; 850 LY</text>
 </svg>
