@@ -53,16 +53,16 @@
   <text x="72" y="103" text-anchor="middle" font-size="14" font-weight="bold" fill="#0A0908">A</text>
 
   <text x="122" y="88" class="lbl">SPECTRAL CLASS A &#183; WHITE STAR</text>
-  <text x="122" y="114" fill="#F5EDD8" font-size="28" font-weight="bold" letter-spacing="1">LV 28</text>
-  <text x="236" y="114" class="sub">796 XP &#183; rolling 365d</text>
+  <text x="122" y="114" fill="#F5EDD8" font-size="28" font-weight="bold" letter-spacing="1">LV 27</text>
+  <text x="236" y="114" class="sub">780 XP &#183; rolling 365d</text>
 
   <!-- fusion bar -->
-  <text x="122" y="140" class="lbl">FUSION PROGRESS &#8594; LV 29</text>
+  <text x="122" y="140" class="lbl">FUSION PROGRESS &#8594; LV 28</text>
   <rect x="122" y="148" width="420" height="12" rx="6" fill="#0A0908" stroke="#2A2117"/>
-  <rect x="122" y="148" height="12" rx="6" fill="url(#bar)" width="88.4">
-    <animate attributeName="width" from="0" to="88.4" dur="1.2s" fill="freeze"/>
+  <rect x="122" y="148" height="12" rx="6" fill="url(#bar)" width="389.5">
+    <animate attributeName="width" from="0" to="389.5" dur="1.2s" fill="freeze"/>
   </rect>
-  <text x="542" y="140" text-anchor="end" class="sub">12 / 57 &#183; next at 841</text>
+  <text x="542" y="140" text-anchor="end" class="sub">51 / 55 &#183; next at 784</text>
 
   <!-- spectral ladder -->
   <text x="122" y="186" class="lbl">SPECTRAL LADDER</text>
@@ -98,6 +98,6 @@
 
   <!-- footer -->
   <line x1="26" y1="232" x2="814" y2="232" stroke="#2A2117" stroke-width="1"/>
-  <text x="26" y="245" class="sub">SYNCED 23 AUG 2026 &#183; SOURCE: GRAPHQL API</text>
+  <text x="26" y="245" class="sub">SYNCED 02 SEP 2026 &#183; SOURCE: GRAPHQL API</text>
   <text x="814" y="245" text-anchor="end" class="sub" fill="#A6C8FF">&#946; ORI &#183; RIGEL &#183; B8Ia &#183; 850 LY</text>
 </svg>
