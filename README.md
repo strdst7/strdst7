@@ -68,19 +68,61 @@ My projects move between enterprise AI reliability and public-good technology, w
 <img src="stellar-progress.svg" alt="Live GitHub contribution and stellar progress chart" width="840">
 </div>
 
-<sub>Generated from this profile's contribution data and refreshed daily by GitHub Actions.</sub>
-
-## Open a channel
-
-I'm open to conversations about dependable AI systems, agent governance, applied RAG, creative technology, and mission-driven products.
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/Visit-aimirah.com-E9C46A?style=for-the-badge&labelColor=0A0908&logo=safari&logoColor=E9C46A)](https://www.aimirah.com)
-[![GitHub](https://img.shields.io/badge/Follow-@strdst7-F0D48A?style=for-the-badge&labelColor=0A0908&logo=github&logoColor=F0D48A)](https://github.com/strdst7)
+<br>
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=strdst7&show_icons=true&theme=dark&hide_border=true&title_color=E9C46A&icon_color=E9C46A&text_color=f4f2dd&bg_color=0A0908" />
+  <img alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=strdst7&show_icons=true&theme=default&hide_border=true&title_color=22230F&icon_color=B0492C&text_color=22230F&bg_color=F5F4E4" />
+</picture>
 
 <br>
 
-✦ &nbsp; Building useful intelligence from the Orion arm &nbsp; ✦
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com?user=strdst7&theme=dark&hide_border=true&stroke=0A0908&ring=E9C46A&fire=E9C46A&currStreakLabel=E9C46A&background=0A0908" />
+  <img alt="GitHub streak" src="https://github-readme-streak-stats.herokuapp.com?user=strdst7&theme=default&hide_border=true&stroke=22230F&ring=B0492C&fire=B0492C&currStreakLabel=22230F&background=F5F4E4" />
+</picture>
+
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=strdst7&layout=compact&theme=dark&hide_border=true&title_color=E9C46A&text_color=f4f2dd&bg_color=0A0908" />
+  <img alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=strdst7&layout=compact&theme=default&hide_border=true&title_color=22230F&text_color=22230F&bg_color=F5F4E4" />
+</picture>
 
 </div>
+
+</details>
+<sub>Generated from this profile's contribution data and refreshed daily by GitHub Actions.</sub>
+
+
+<details open>
+<summary><h2>📬 Open a channel</h2></summary>
+
+<br>
+
+I'm open to conversations about **dependable AI systems**, **agent governance**, **applied RAG**, **creative technology**, and **mission-driven products**.
+
+<br>
+
+<div align="center">
+
+[![Website](https://img.shields.io/badge/visit-aimirah.com-E9C46A?style=for-the-badge&labelColor=0A0908&logo=safari&logoColor=E9C46A)](https://www.aimirah.com)
+[![GitHub](https://img.shields.io/badge/follow-@strdst7-F0D48A?style=for-the-badge&labelColor=0A0908&logo=github&logoColor=F0D48A)](https://github.com/strdst7)
+[![MI4 Inc.](https://img.shields.io/badge/company-MI4_Inc.-D9AE55?style=for-the-badge&labelColor=0A0908&logo=github&logoColor=D9AE55)](https://github.com/MI4-inc)
+
+<br>
+
+✦ &nbsp; *Building useful intelligence from the Orion arm.* &nbsp; ✦
+
+</div>
+
+</details>
+
+---
+
+<sub>📌 This profile is also a live, interactive single-page systems board — rendered from the same design language. Ask for the link.</sub>
