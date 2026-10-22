@@ -98,6 +98,6 @@
 
   <!-- footer -->
   <line x1="26" y1="232" x2="814" y2="232" stroke="#2A2117" stroke-width="1"/>
-  <text x="26" y="245" class="sub">SYNCED 22 OCT 2026 &#183; SOURCE: GRAPHQL API</text>
+  <text x="26" y="245" class="sub">SYNCED 23 OCT 2026 &#183; SOURCE: GRAPHQL API</text>
   <text x="814" y="245" text-anchor="end" class="sub" fill="#A6C8FF">&#946; ORI &#183; RIGEL &#183; B8Ia &#183; 850 LY</text>
 </svg>
