@@ -80,7 +80,7 @@
   <line x1="600" y1="62" x2="600" y2="230" stroke="#2A2117" stroke-width="1"/>
   <g>
     <text x="614" y="84"  class="lbl">CURRENT ORBIT</text>
-    <text x="614" y="106" class="val">2 d</text>
+    <text x="614" y="106" class="val">0 d</text>
     <text x="614" y="119" class="sub">day streak</text>
 
     <text x="614" y="146" class="lbl">LONGEST BURN</text>
@@ -98,6 +98,6 @@
 
   <!-- footer -->
   <line x1="26" y1="232" x2="814" y2="232" stroke="#2A2117" stroke-width="1"/>
-  <text x="26" y="245" class="sub">SYNCED 26 OCT 2026 &#183; SOURCE: GRAPHQL API</text>
+  <text x="26" y="245" class="sub">SYNCED 27 OCT 2026 &#183; SOURCE: GRAPHQL API</text>
   <text x="814" y="245" text-anchor="end" class="sub" fill="#A6C8FF">&#946; ORI &#183; RIGEL &#183; B8Ia &#183; 850 LY</text>
 </svg>
