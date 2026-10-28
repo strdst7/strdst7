@@ -54,15 +54,15 @@
 
   <text x="122" y="88" class="lbl">SPECTRAL CLASS B &#183; RIGEL TIER</text>
   <text x="122" y="114" fill="#F5EDD8" font-size="28" font-weight="bold" letter-spacing="1">LV 36</text>
-  <text x="236" y="114" class="sub">1,330 XP &#183; rolling 365d</text>
+  <text x="236" y="114" class="sub">1,342 XP &#183; rolling 365d</text>
 
   <!-- fusion bar -->
   <text x="122" y="140" class="lbl">FUSION PROGRESS &#8594; LV 37</text>
   <rect x="122" y="148" width="420" height="12" rx="6" fill="#0A0908" stroke="#2A2117"/>
-  <rect x="122" y="148" height="12" rx="6" fill="url(#bar)" width="195.6">
-    <animate attributeName="width" from="0" to="195.6" dur="1.2s" fill="freeze"/>
+  <rect x="122" y="148" height="12" rx="6" fill="url(#bar)" width="264.7">
+    <animate attributeName="width" from="0" to="264.7" dur="1.2s" fill="freeze"/>
   </rect>
-  <text x="542" y="140" text-anchor="end" class="sub">34 / 73 &#183; next at 1,369</text>
+  <text x="542" y="140" text-anchor="end" class="sub">46 / 73 &#183; next at 1,369</text>
 
   <!-- spectral ladder -->
   <text x="122" y="186" class="lbl">SPECTRAL LADDER</text>
@@ -98,6 +98,6 @@
 
   <!-- footer -->
   <line x1="26" y1="232" x2="814" y2="232" stroke="#2A2117" stroke-width="1"/>
-  <text x="26" y="245" class="sub">SYNCED 28 OCT 2026 &#183; SOURCE: GRAPHQL API</text>
+  <text x="26" y="245" class="sub">SYNCED 29 OCT 2026 &#183; SOURCE: GRAPHQL API</text>
   <text x="814" y="245" text-anchor="end" class="sub" fill="#A6C8FF">&#946; ORI &#183; RIGEL &#183; B8Ia &#183; 850 LY</text>
 </svg>
