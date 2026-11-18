@@ -61,7 +61,20 @@ My projects move between enterprise AI reliability and public-good technology, w
 - **Validate before reality pays the price.** Simulation and deterministic checks belong before deployment.
 - **Privacy should be architectural.** When a task can run locally, user data should stay local.
 - **Useful beats impressive.** The best system solves a real problem clearly and survives contact with its users.
+## Containers
 
+Everything I ship leaves the notebook in an image — eight Dockerfiles in public
+repos, thirteen in total, each solving a packaging problem rather than copying
+a template.
+
+| Repo | The packaging problem |
+| --- | --- |
+| [ai-os](https://github.com/strdst7/ai-os) | Two-stage Python build; runtime layer carries packages and source only. Lifecycle is CI-tested — restart, recreate on the same volume, backup/restore, ENOSPC — [report](https://github.com/strdst7/ai-os/blob/main/docs/operational-readiness-005c.md) |
+| [Fieldwork](https://github.com/strdst7/Fieldwork) | Node build → nginx runtime with a `HEALTHCHECK` on `/healthz`; bookworm base because Rollup's native parser fails under musl |
+| [miva-studio](https://github.com/strdst7/miva-studio) | CUDA 11.8/cuDNN runtime for GPU inference, plus a slim Render variant |
+| [midnight-counter](https://github.com/strdst7/midnight-counter) | Compose devnet with a pinned indexer and a distroless proof-server that can't be healthchecked from inside |
+| [CCAM](https://github.com/strdst7/CCAM-for-Malaysian-SMEs) | `uv`-based Python build with a `.dockerignore` that keeps tests out of the image |
+| [readytensor-rag-assistant](https://github.com/strdst7/readytensor-rag-assistant) | Streamlit-first image for a Render deploy |
 ## Stellar telemetry
 
 <div align="center">
