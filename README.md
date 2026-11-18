@@ -6,7 +6,7 @@
 
 ### I build AI systems that remain useful after the demo.
 
-Governed agents · reliable RAG · digital twins · privacy-first creative tools
+Governed agents · reliable RAG · containerized delivery · privacy-first creative tools
 
 <br>
 
@@ -41,6 +41,21 @@ My projects move between enterprise AI reliability and public-good technology, w
 | [**BantuRakyat-AI**](https://github.com/strdst7/BantuRakyat-AI) · [Live](https://bantu-rakyat-ai.vercel.app) | `AI FOR GOOD` | Helps Malaysians discover government assistance programs and understand their eligibility |
 | [**ReadyTensor RAG Assistant**](https://github.com/strdst7/readytensor-rag-assistant) | `RAG` | A FastAPI, LangChain, and Streamlit assistant for context-aware publication discovery |
 
+## Containers
+
+Everything I ship leaves the notebook in an image — eight Dockerfiles in public repos, thirteen across all my repositories. Each one solves a packaging problem rather than copying a template.
+
+| Repo | The problem it solves |
+| --- | --- |
+| [**ai-os**](https://github.com/strdst7/ai-os) | Two-stage Python build; the runtime layer carries installed packages and source only. Restart, recreate-on-same-volume and backup/restore run in CI — see the [lifecycle report](https://github.com/strdst7/ai-os/blob/main/docs/operational-readiness-005c.md) |
+| [**Fieldwork**](https://github.com/strdst7/Fieldwork) | Node build → nginx runtime, with a `HEALTHCHECK` on `/healthz` that can actually fail a deploy. Debian base because Rollup's native parser breaks under musl |
+| [**miva-studio**](https://github.com/strdst7/miva-studio) | CUDA 11.8 / cuDNN runtime for GPU inference, plus a slim preview image for hosts without a GPU |
+| [**midnight-counter**](https://github.com/strdst7/midnight-counter) | Compose devnet with a deliberately pinned indexer and a distroless proof-server that can't be healthchecked from inside, so the wait moves to the host |
+| [**CCAM for Malaysian SMEs**](https://github.com/strdst7/CCAM-for-Malaysian-SMEs) | `uv`-based Python build with a `.dockerignore` that keeps tests and helm charts out of the image |
+| [**ReadyTensor RAG Assistant**](https://github.com/strdst7/readytensor-rag-assistant) | Streamlit-first image sized for a Render deploy |
+
+Multi-stage builds by default · healthchecks that can fail a deploy · image tags pinned with the reason written next to them · container lifecycle tested instead of assumed.
+
 ## Constellation loadout
 
 <div align="center">
@@ -49,11 +64,11 @@ My projects move between enterprise AI reliability and public-good technology, w
 
 ### Core tools
 
-`Python` · `TypeScript` · `JavaScript` · `FastAPI` · `React` · `LangChain` · `Streamlit` · `Docker` · `GitHub Actions` · `Google Cloud`
+`Python` · `TypeScript` · `JavaScript` · `FastAPI` · `React` · `LangChain` · `Streamlit` · `Docker` · `Docker Compose` · `GitHub Actions` · `Google Cloud`
 
 ### Systems focus
 
-`Multi-agent architectures` · `RAG pipelines` · `AI governance` · `Digital twins` · `Evaluation` · `Observability` · `Privacy-first applications`
+`Multi-agent architectures` · `RAG pipelines` · `AI governance` · `Digital twins` · `Containerization` · `Evaluation` · `Observability` · `Privacy-first applications`
 
 ## Engineering principles
 
@@ -61,32 +76,21 @@ My projects move between enterprise AI reliability and public-good technology, w
 - **Validate before reality pays the price.** Simulation and deterministic checks belong before deployment.
 - **Privacy should be architectural.** When a task can run locally, user data should stay local.
 - **Useful beats impressive.** The best system solves a real problem clearly and survives contact with its users.
-## Containers
 
-Everything I ship leaves the notebook in an image — eight Dockerfiles in public
-repos, thirteen in total, each solving a packaging problem rather than copying
-a template.
+## Field notes
 
-| Repo | The packaging problem |
-| --- | --- |
-| [ai-os](https://github.com/strdst7/ai-os) | Two-stage Python build; runtime layer carries packages and source only. Lifecycle is CI-tested — restart, recreate on the same volume, backup/restore, ENOSPC — [report](https://github.com/strdst7/ai-os/blob/main/docs/operational-readiness-005c.md) |
-| [Fieldwork](https://github.com/strdst7/Fieldwork) | Node build → nginx runtime with a `HEALTHCHECK` on `/healthz`; bookworm base because Rollup's native parser fails under musl |
-| [miva-studio](https://github.com/strdst7/miva-studio) | CUDA 11.8/cuDNN runtime for GPU inference, plus a slim Render variant |
-| [midnight-counter](https://github.com/strdst7/midnight-counter) | Compose devnet with a pinned indexer and a distroless proof-server that can't be healthchecked from inside |
-| [CCAM](https://github.com/strdst7/CCAM-for-Malaysian-SMEs) | `uv`-based Python build with a `.dockerignore` that keeps tests out of the image |
-| [readytensor-rag-assistant](https://github.com/strdst7/readytensor-rag-assistant) | Streamlit-first image for a Render deploy |
+I write up the traps, not the highlight reel — container failures included.
+
+- [**dev.to/miii**](https://dev.to/miii) — build notes and what broke on the way
+- [**aimirah.com**](https://www.aimirah.com) — the longer learning log
+
 ## Stellar telemetry
 
 <div align="center">
-<img src="stellar-progress.svg" alt="Live GitHub contribution and stellar progress chart" width="840">
-</div>
 
-
-<div align="center">
+<img src="stellar-progress.svg" alt="GitHub contribution and stellar progress chart" width="840">
 
 <br>
-
-<div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=strdst7&show_icons=true&theme=dark&hide_border=true&title_color=E9C46A&icon_color=E9C46A&text_color=f4f2dd&bg_color=0A0908" />
@@ -109,18 +113,9 @@ a template.
 
 </div>
 
-</details>
-<sub>Generated from this profile's contribution data and refreshed daily by GitHub Actions.</sub>
+## Open a channel
 
-
-<details open>
-<summary><h2>📬 Open a channel</h2></summary>
-
-<br>
-
-I'm open to conversations about **dependable AI systems**, **agent governance**, **applied RAG**, **creative technology**, and **mission-driven products**.
-
-<br>
+I'm open to conversations about **dependable AI systems**, **agent governance**, **applied RAG**, **container packaging**, **creative technology**, and **mission-driven products**.
 
 <div align="center">
 
@@ -133,9 +128,3 @@ I'm open to conversations about **dependable AI systems**, **agent governance**,
 ✦ &nbsp; *Building useful intelligence from the Orion arm.* &nbsp; ✦
 
 </div>
-
-</details>
-
----
-
-<sub>📌 This profile is also a live, interactive single-page systems board — rendered from the same design language. Ask for the link.</sub>
