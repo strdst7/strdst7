@@ -48,9 +48,9 @@ Everything I ship leaves the notebook in an image — eight Dockerfiles in publi
 | Repo | The problem it solves |
 | --- | --- |
 | [**ai-os**](https://github.com/strdst7/ai-os) | Two-stage Python build; the runtime layer carries installed packages and source only. Restart, recreate-on-same-volume and backup/restore run in CI — see the [lifecycle report](https://github.com/strdst7/ai-os/blob/main/docs/operational-readiness-005c.md) |
-| [**Fieldwork**](https://github.com/strdst7/Fieldwork) | Node build → nginx runtime, with a `HEALTHCHECK` on `/healthz` that can actually fail a deploy. Debian base because Rollup's native parser breaks under musl |
+| [**Fieldwork**](https://github.com/strdst7/Fieldwork) | Node build → nginx runtime; the `HEALTHCHECK` probes a real `/healthz` location in the nginx config instead of assuming one. Debian build stage because Rollup's native parser ships per-libc |
 | [**miva-studio**](https://github.com/strdst7/miva-studio) | CUDA 11.8 / cuDNN runtime for GPU inference, plus a slim preview image for hosts without a GPU |
-| [**midnight-counter**](https://github.com/strdst7/midnight-counter) | Compose devnet with a deliberately pinned indexer and a distroless proof-server that can't be healthchecked from inside, so the wait moves to the host |
+| [**midnight-counter**](https://github.com/strdst7/midnight-counter) | Compose devnet with a deliberately pinned indexer, a proof-server pinned above the arm64 hang, and a bash `/dev/tcp` healthcheck so `--wait` means ready |
 | [**CCAM for Malaysian SMEs**](https://github.com/strdst7/CCAM-for-Malaysian-SMEs) | `uv`-based Python build with a `.dockerignore` that keeps tests and helm charts out of the image |
 | [**ReadyTensor RAG Assistant**](https://github.com/strdst7/readytensor-rag-assistant) | Streamlit-first image sized for a Render deploy |
 
